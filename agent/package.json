@@ -1,0 +1,27 @@
+{
+  "name": "agent",
+  "private": true,
+  "type": "module",
+  "version": "0.0.0",
+  "engines": {
+    "node": "22.x"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/json-schema": "7.0.15",
+    "@types/node": "^22.16.0",
+    "@typescript-eslint/parser": "^8.34.1",
+    "esbuild": "^0.25.0",
+    "eslint": "^9.29.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.0",
+    "prettier": "^3.5.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.0",
+    "fs-extra": "^11.3.0",
+    "web-bot-auth": "^0.1.1"
+  }
+}

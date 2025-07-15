@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "cardNumber": "4111111111111111",
+    "cardHolder": "John Doe",
+    "expiryDate": "12/25",
+    "cvv": "123"
+  },
+  {
+    "id": "2",
+    "cardNumber": "5500000000000004",
+    "cardHolder": "Jane Smith",
+    "expiryDate": "11/24",
+    "cvv": "456"
+  },
+  {
+    "id": "3",
+    "cardNumber": "340000000000009",
+    "cardHolder": "Alice Johnson",
+    "expiryDate": "10/23",
+    "cvv": "789"
+  },
+  {
+    "id": "4",
+    "cardNumber": "6011000000000012",
+    "cardHolder": "Bob Brown",
+    "expiryDate": "09/22",
+    "cvv": "321"
+  }
+]
