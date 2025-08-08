@@ -89,7 +89,17 @@ const app = new Hono();
 
 app.get("/", async (c) => {
   const rawRequest = c.req.raw;
-  await verify(rawRequest, await verifierFromJWK(RFC_9421_ED25519_TEST_KEY));
+  try {
+    await verify(rawRequest, await verifierFromJWK(RFC_9421_ED25519_TEST_KEY));
+  } catch (error) {
+    return c.newResponse("Failed signature check", {
+      status: 401,
+      statusText: "Unauthorized",
+      headers: {
+        "Content-Type": "text/plain",
+      },
+    });
+  }
   return c.text("Hello Hono!");
 });
 ...
